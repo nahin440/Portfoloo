@@ -1,0 +1,10 @@
+.nav-bg{
+    background-image: url('../../../public/Snow (1).svg');
+}
+
+.active{
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(20, 0, 132);
+    border-radius: 8px;
+    border: 2px solid gray;
+}

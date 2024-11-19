@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Warm Hearts Campaign",
+    "image": "https://i.ibb.co.com/ZXQk5dS/Picsart-24-11-19-14-24-08-409.jpg",
+    "description": "Help the people of Dhaka stay warm this winter with your generous clothing donations.",
+    "status": "Active",
+    "contactInfo": "017XXXXXXXX",
+    "division": "Dhaka"
+  },
+  {
+    "id": 2,
+    "title": "Bundle of Warmth",
+    "image": "https://i.ibb.co.com/cLVFNbJ/Picsart-24-11-19-14-22-44-242.jpg",
+    "description": "Support the vulnerable communities in Chattogram by donating warm clothes.",
+    "status": "Active",
+    "contactInfo": "018XXXXXXXX",
+    "division": "Chattogram"
+  },
+  {
+    "id": 3,
+    "title": "Rajshahi Winter Relief",
+    "image": "https://i.ibb.co.com/55RbsNL/Picsart-24-11-19-14-23-10-953.jpg",
+    "description": "Help the people in Rajshahi with your winter clothing donations.",
+    "status": "Upcoming",
+    "contactInfo": "013XXXXXXXX",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 4,
+    "title": "Sylhet Winter Assistance",
+    "image": "https://i.ibb.co.com/b3b0wZ5/Picsart-24-11-19-14-23-34-403.jpg",
+    "description": "Donate your warm clothes to those in need during the cold season in Sylhet.",
+    "status": "Active",
+    "contactInfo": "016XXXXXXXX",
+    "division": "Sylhet"
+  },
+  {
+    "id": 5,
+    "title": "Khulna Clothing Drive",
+    "image": "https://i.ibb.co.com/F5JJDnY/Picsart-24-11-19-14-24-33-265.jpg",
+    "description": "Assist the vulnerable communities in Khulna with your clothing donations.",
+    "status": "Completed",
+    "contactInfo": "014XXXXXXXX",
+    "division": "Khulna"
+  },
+  {
+    "id": 6,
+    "title": "Barisal Warm Drive",
+    "image": "https://i.ibb.co.com/QFHbrjp/Picsart-24-11-19-14-26-06-361.jpg",
+    "description": "Bring warmth to the underprivileged people in Barisal by donating winter clothing.",
+    "status": "Upcoming",
+    "contactInfo": "012XXXXXXXX",
+    "division": "Barisal"
+  },
+  {
+    "id": 7,
+    "title": "Mymensingh Clothing Relief",
+    "image": "https://i.ibb.co.com/HrSWLdY/Picsart-24-11-19-14-25-35-682.jpg",
+    "description": "Support the people of Mymensingh by donating blankets and jackets for the winter season.",
+    "status": "Active",
+    "contactInfo": "019XXXXXXXX",
+    "division": "Mymensingh"
+  },
+  {
+    "id": 8,
+    "title": "Rangpur Clothing Support",
+    "image": "https://i.ibb.co.com/Gkm6FD1/Picsart-24-11-19-14-24-57-716.jpg",
+    "description": "Provide warm clothes to the people in Rangpur who are suffering due to the cold weather.",
+    "status": "Active",
+    "contactInfo": "015XXXXXXXX",
+    "division": "Rangpur"
+  }
+]
