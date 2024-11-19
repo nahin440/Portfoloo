@@ -5,7 +5,7 @@ const Camp = ({ camp }) => {
 
     const { title, image, description, division, id } = camp
     return (
-        <div>
+        <div  data-aos="zoom-in">
             <div className="card w-fit bg-base-100 shadow-xl mx-auto">
                 <figure>
                     <img
