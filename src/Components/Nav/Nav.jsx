@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import './Nav.css'
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../assets/simple hyper realistic logo for a winter clothing donation website.png'
+import logo from '../../assets/bannerPics/logo.jpg'
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Nav = () => {
     const { user, logOut } = useContext(AuthContext)
     return (
-        <div className='nav-bg' >
+        <div className='nav-bg ' >
 
 
             <div className="navbar w-11/12 md:w-9/12 mx-auto py-5 text-white">
@@ -38,7 +38,7 @@ const Nav = () => {
                         </ul>
                     </div>
                     <div>
-                        <a className=""><img className='w-16 h-16 rounded-full p-1 border border-white' src={logo} alt="" /></a>
+                        <Link to="/" className=""><img className='w-10 h-10 p-1 border rounded-full border-white' src={logo} alt="" /></Link>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex  ">
@@ -55,9 +55,9 @@ const Nav = () => {
 
                             :
 
-                            <div className=" space-x-5 ">
-                                <NavLink to="/login" className=" btn btn-primary bg-sky-950 btn-sm px-5 hover:bg-sky-200 hover:text-sky-950    border border-sky-500">Login</    NavLink>
-                                <NavLink to="/register" className=" btn btn-primary bg-sky-950 btn-sm px-5 hover:bg-sky-200 hover:text-sky-950 border border-sky-500 ">Register</NavLink>
+                            <div className=" space-x-2 md:space-x-5 ">
+                                <NavLink to="/login" className=" btn btn-primary bg-sky-950 btn-sm px-2 md:px-5 hover:bg-sky-200 hover:text-sky-950    border border-sky-500">Login</    NavLink>
+                                <NavLink to="/register" className=" btn btn-primary bg-sky-950 btn-sm px-2 md:px-5 hover:bg-sky-200 hover:text-sky-950 border border-sky-500 ">Register</NavLink>
                             </div>
                     }
                 </div>
