@@ -1,6 +1,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
+import CountUp from 'react-countup';
 
 
 const WhyDonate = () => {
@@ -27,7 +28,7 @@ const WhyDonate = () => {
                     <div className="p-6 bg-gray-100 rounded-lg shadow-lg" data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
-                        <div className="text-sky-800 text-4xl font-bold mb-2">10,000+</div>
+                        <div className="text-sky-800 text-4xl font-bold mb-2"><CountUp start={0} end={8580} duration={3} separator="," /></div>
                         <p className="text-gray-700 font-semibold">Clothes Donated</p>
                         <p className="text-gray-500 mt-2">
                             Over 10,000 items donated to those in need across Bangladesh.
@@ -37,7 +38,7 @@ const WhyDonate = () => {
                     <div className="p-6 bg-gray-100 rounded-lg shadow-lg" data-aos="flip-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
-                        <div className="text-sky-800 text-4xl font-bold mb-2">5,000+</div>
+                        <div className="text-sky-800 text-4xl font-bold mb-2"><CountUp start={0} end={3450} duration={3} separator="," /></div>
                         <p className="text-gray-700 font-semibold">Families Helped</p>
                         <p className="text-gray-500 mt-2">
                             Helping families stay warm and protected during winter.
@@ -47,7 +48,7 @@ const WhyDonate = () => {
                     <div className="p-6 bg-gray-100 rounded-lg shadow-lg" data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
-                        <div className="text-sky-800 text-4xl font-bold mb-2">500+</div>
+                        <div className="text-sky-800 text-4xl font-bold mb-2"><CountUp start={0} end={530} duration={3} separator="," /></div>
                         <p className="text-gray-700 font-semibold">Volunteers Engaged</p>
                         <p className="text-gray-500 mt-2">
                             A dedicated team of volunteers making a difference every day.

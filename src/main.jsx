@@ -18,6 +18,7 @@ import DonationDetails from './Components/Donation/Donation.jsx';
 import PrivateDonation from './Components/PrivateRoute/PrivateDonation.jsx';
 import UpdateProfile from './Components/UpdateProfile/UpdateProfile.jsx';
 import HowToHelp from './Components/HowToHelp/HowToHelp.jsx';
+import Testing from './Components/testing/Testing.jsx';
 
 
 const router = createBrowserRouter([
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login></Login>,
+      },
+      {
+        path: "testing",
+        element: <Testing></Testing>,
       },
       {
         path: "register",
