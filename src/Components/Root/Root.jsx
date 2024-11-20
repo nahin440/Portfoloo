@@ -4,6 +4,9 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import'./Root.css'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Root = () => {
     
@@ -11,8 +14,9 @@ const Root = () => {
         <div className='main-bg' >
             
             <Nav></Nav>
-            <div className=' my-10 w-11/12 md:w-9/12 mx-auto' >
+            <div className=' ' >
             <Outlet></Outlet>
+            <ToastContainer></ToastContainer>
             </div>
             <Footer></Footer>
 

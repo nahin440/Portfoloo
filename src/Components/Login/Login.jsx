@@ -1,12 +1,16 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../Provider/AuthProvider';
+import { auth, AuthContext } from '../../Provider/AuthProvider';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 const Login = () => {
+
 
     const { userLogin, setUser } = useContext(AuthContext)
 
     const [err, setErr] = useState({})
+
+    const emailRef = useRef()
 
     const location = useLocation()
     const navigate = useNavigate()
@@ -36,6 +40,19 @@ const Login = () => {
 
     }
 
+    const handleForgetPassword = () => {
+        const email = emailRef.current.value;
+        if(!email){
+            const message = "Please Provide a valid Email" 
+            alert('Please Provide a valid Email')
+        }
+
+        sendPasswordResetEmail(auth,email)
+        .then(()=>{
+            alert(' Password Reset email has been sent to your email.')
+        })
+    }
+
 
     return (
         <div className='flex justify-center items-center'>
@@ -45,14 +62,14 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" name='email' placeholder="email" className="input input-bordered" required />
+                        <input ref={emailRef} type="email" name='email' placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
                         <input type="password" name='password' placeholder="password" className="input input-bordered" required />
-                        <label className="label">
+                        <label onClick={handleForgetPassword} className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
                     </div>

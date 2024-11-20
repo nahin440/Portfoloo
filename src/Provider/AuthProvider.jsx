@@ -5,13 +5,18 @@ import app from "../Firebase/firebase.config";
 
 export const AuthContext = createContext()
 
-const auth = getAuth(app)
+export const auth = getAuth(app)
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     // console.log(user)
 
     const [loading,setLoading] = useState(true)
+
+    const updateUser= (updatedData) => {
+        return updateProfile(auth.currentUser,updatedData)
+
+    }
 
     const createNewUser = (email,password) => {
         setLoading(true)
@@ -28,10 +33,7 @@ const AuthProvider = ({ children }) => {
         return signOut(auth)
     }
 
-    const updateUser= (updatedData) => {
-        return updateProfile(auth.currentUser,updatedData)
-
-    }
+ 
 
     const authInfo = {
         user,
@@ -40,6 +42,7 @@ const AuthProvider = ({ children }) => {
         logOut,
         userLogin,
         loading,
+        setLoading,
         updateUser
     };
 

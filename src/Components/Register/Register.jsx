@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import Loader from '../Loader/Loader';
 
 const Register = () => {
 
-    const {createNewUser,setUser,updateUser} = useContext(AuthContext)
+    const {createNewUser,setUser,loading,updateUser,setLoading} = useContext(AuthContext)
     const [error,setError] = useState({})
     const navigate = useNavigate()
 
@@ -15,23 +16,36 @@ const Register = () => {
 
         const form = new FormData(e.target)
         const name = form.get("name")
-        // if(name.length < 5){
-        //     setError({...error,name: "At least 5 character long"});
-        //     return;
-        // }
+        if(name.length < 5){
+            setError({...error,name: "At least 5 character long"});
+            return;
+        }
 
         
         const photo = form.get("photo")
         const email = form.get("email")
         const password = form.get("password")
-        console.log({name,email,password,photo})
+        
 
         createNewUser(email,password)
         .then((result )=> {
+
             const user = result.user;
             setUser(user)
-            updateUser({disPlayName:name,photoURL:photo})
-            .then(()=> {navigate("/")})
+            setLoading(true)
+
+
+            updateUser({displayName:name,photoURL:photo})
+            
+            .then(()=> {
+                setUser({...user,displayName:name,photoURL:photo})
+                
+                console.log(user)
+                if(loading){
+                    return <Loader></Loader>
+                }
+                setLoading(false)
+                navigate("/")})
 
             
         })

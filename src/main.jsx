@@ -16,6 +16,7 @@ import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import AuthProvider from './Provider/AuthProvider.jsx';
 import DonationDetails from './Components/Donation/Donation.jsx';
 import PrivateDonation from './Components/PrivateRoute/PrivateDonation.jsx';
+import UpdateProfile from './Components/UpdateProfile/UpdateProfile.jsx';
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register></Register>,
+      },
+      {
+        path: "updateProfile",
+        element: <UpdateProfile></UpdateProfile>,
       },
       {
         path: "donate/:id",

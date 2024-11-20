@@ -25,7 +25,7 @@ const BannerImg = () => {
             modules={[Navigation, Pagination, Autoplay]}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 1500, disableOnInteraction: false }}
             loop={true}
             className="mySwiper"
           >

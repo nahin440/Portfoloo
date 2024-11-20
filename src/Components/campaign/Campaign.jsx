@@ -12,7 +12,7 @@ const Campaign = () => {
     return (
 
 
-        <div>
+        <div className='my-10 w-11/12 md:w-9/12 mx-auto' >
             <div className='md:w-9/12 mx-auto bg-sky-50 p-5 rounded-xl space-y-5 my-10' >
                 <h1 className='text-2xl font-bold animate__bounceIn' >
                     Join Our Winter Warmth Campaign

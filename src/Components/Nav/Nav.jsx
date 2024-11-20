@@ -51,7 +51,7 @@ const Nav = () => {
 
                 <div className='navbar-end' >
                     {
-                        user && user.email ? <div className='flex gap-5 items-center' > <img className='w-12 h-12 rounded-full' src={user.photoURL} alt="" /> <button onClick={logOut} className=" btn btn-primary bg-sky-950 btn-sm px-5 hover:bg-sky-200 hover:text-sky-950 border border-sky-500 " > Log Out</button> </div>
+                        user && user.email ? <div className='flex gap-3 justify-start items-center' > <Link to="/dashboard" ><img className='w-10 h-10 p-1 border rounded-full border-white' src={user && user?.photoURL} alt="" /></Link> <button onClick={logOut} className=" btn  btn-primary bg-sky-950 btn-sm px-5 hover:bg-sky-200 hover:text-sky-950 border border-sky-500 " > Log Out</button> </div>
 
                             :
 
