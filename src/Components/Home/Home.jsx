@@ -25,15 +25,17 @@ const Home = () => {
             <div className=' relative border-2 bg-sky-50 bg-opacity-75 mb-10  border-blue-100'>
 
 
-                <div>
-                <BannerImg></BannerImg>
-                </div>
+                
 
                 <div className='text-sky-950 inset-0 flex-col justify-center items-center text-center space-y-5 md:w-8/12 mx-auto my-10 top-10  '  >
                     <h1 className='text-2xl font-bold animate__bounceIn' >Donate Bangladesh</h1>
                     <p className='animate__backOutLeft' >
                         Spread warmth this winter by donating clothing to those in need. Every piece counts. Together, we can make a difference and bring comfort to many.
                     </p>
+                </div>
+
+                <div>
+                <BannerImg></BannerImg>
                 </div>
 
             </div>

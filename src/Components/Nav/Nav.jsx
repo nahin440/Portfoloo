@@ -46,6 +46,7 @@ const Nav = () => {
                         <NavLink className='px-5 py-2' to="/" >Home</NavLink>
                         <NavLink className='px-5 py-2' to="/campaign" >Campaign</NavLink>
                         <NavLink className='px-5 py-2' to="/dashboard" >Dashboard</NavLink>
+                        <NavLink className='px-5 py-2' to="/how-to-help" >How To Help</NavLink>
                     </ul>
                 </div>
 

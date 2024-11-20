@@ -17,6 +17,7 @@ import AuthProvider from './Provider/AuthProvider.jsx';
 import DonationDetails from './Components/Donation/Donation.jsx';
 import PrivateDonation from './Components/PrivateRoute/PrivateDonation.jsx';
 import UpdateProfile from './Components/UpdateProfile/UpdateProfile.jsx';
+import HowToHelp from './Components/HowToHelp/HowToHelp.jsx';
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: ( <PrivateDonation> <Dashboard></Dashboard> </PrivateDonation> ),
+      },
+      {
+        path: "how-to-help",
+        element: <HowToHelp></HowToHelp>,
       },
       {
         path: "login",
