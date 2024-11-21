@@ -76,7 +76,9 @@ const UpdateProfile = () => {
     return (
         <div className='bg-opacity-60 bg-gradient-to-r from-blue-800/30 via-blue-500/30 to-sky-900/30 p-20'>
             <div className='flex justify-center items-center' >
+
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <i className=' text-xl pt-10 font-bold border-b-4 border-sky-900 w-fit text-sky-900 mx-10' >Update your profile</i>
                     <form onSubmit={handleUpdate} className="card-body space-y-5">
                         <div className="form-control">
                             {/* <label className="label">
