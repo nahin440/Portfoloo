@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom';
 
 const HowItWorks = () => {
 
@@ -100,12 +101,11 @@ const HowItWorks = () => {
                     data-aos="fade-up"
                     data-aos-delay="600"
                 >
-                    <a
-                        href="/donate"
+                    <Link to="/campaign"
                         className="bg-sky-800 hover:bg-sky-950 text-white px-6 py-3 rounded-full text-lg shadow-lg"
                     >
                         Start Donating
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

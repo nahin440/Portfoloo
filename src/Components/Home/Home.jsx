@@ -41,7 +41,10 @@ const Home = () => {
             </div>
 
 
-            <div className='my-10 w-11/12 md:w-9/12 mx-auto' >
+            <div className='my-10 w-11/12 md:w-9/12 mx-auto p-4 bg-sky-100' >
+            <h2 className="text-3xl mx-auto border-b-4 border-black w-fit md:text-4xl font-bold text-gray-800 mb-6 animate__rubberBand">
+                    About us
+                </h2>
 
                 <div className='md:flex space-y-5 md:space-y-0 p-5 bg-gray-300 justify-evenly  bg-opacity-20 shadow-xl gap-10  text-sky-950 '  >
 
@@ -77,15 +80,16 @@ const Home = () => {
             </div>
 
 
+            <div className='my-10 w-11/12 md:w-9/12 mx-auto'>
+                <WhyDonate></WhyDonate>
+            </div>
+
+            
 
             <div className='my-10 w-11/12 md:w-9/12 mx-auto'>
                 <CallToAction></CallToAction>
             </div>
 
-
-            <div className='my-10 w-11/12 md:w-9/12 mx-auto'>
-                <WhyDonate></WhyDonate>
-            </div>
 
 
             <div className='my-10 w-11/12 md:w-9/12 mx-auto'>

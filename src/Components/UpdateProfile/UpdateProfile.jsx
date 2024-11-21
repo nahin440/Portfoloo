@@ -18,7 +18,7 @@ const UpdateProfile = () => {
     
     
     const {displayName,photoURL,email} = user
-    console.log(displayName,photoURL,email)
+    
     setLoading(false)
 
 
@@ -64,7 +64,7 @@ const UpdateProfile = () => {
             .then(()=> {
                 setUser({...user,displayName:name,photoURL:photo,email:email})
                 setLoading(false)
-                console.log(user)
+                
                 toast('profile updated')
                 navigate("/dashboard")})
 

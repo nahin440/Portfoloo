@@ -19,12 +19,14 @@ import PrivateDonation from './Components/PrivateRoute/PrivateDonation.jsx';
 import UpdateProfile from './Components/UpdateProfile/UpdateProfile.jsx';
 import HowToHelp from './Components/HowToHelp/HowToHelp.jsx';
 import Testing from './Components/testing/Testing.jsx';
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

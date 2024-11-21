@@ -31,11 +31,11 @@ const CallToAction = () => {
                     >
                         Donate Now
                     </Link>
-                    <Link to="/campaign"
+                    {/* <Link to="/campaign"
                         className="bg-sky-800 border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-600 transition"
                     >
                         Become a Volunteer
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>
