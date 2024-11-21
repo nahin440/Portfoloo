@@ -39,7 +39,7 @@ const ImageCardSection = () => {
     ];
 
     return (
-        <div className="bg-gray-50 py-12 " data-aos="flip-up" >
+        <div className="bg-gray-50 py-12 " data-aos="fade-up" >
 
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 animate__rubberBand">
@@ -47,7 +47,7 @@ const ImageCardSection = () => {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {cards.map((card, index) => (
-                        <div data-aos="fade-left"
+                        <div data-aos="zoom-out"
                             key={index}
                             className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform duration-300"
                         >
@@ -56,7 +56,7 @@ const ImageCardSection = () => {
                                 alt={card.title}
                                 className="w-full h-48 object-cover"
                             />
-                            <div data-aos="fade-right" className="p-4">
+                            <div data-aos="fade-up" className="p-4">
                                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
                                     {card.title}
                                 </h3>

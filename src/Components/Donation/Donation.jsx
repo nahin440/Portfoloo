@@ -74,7 +74,7 @@ const DonationDetails = () => {
                             <span className="label-text">Quantity of Items</span>
                         </label>
                         <input
-                            type="text"
+                            type="number"
                             name="quantity"
                             placeholder="e.g., 2 jackets, 3 blankets"
                             className="input input-bordered"

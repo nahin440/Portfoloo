@@ -48,7 +48,7 @@ const Home = () => {
 
                 <div className='md:flex space-y-5 md:space-y-0 p-5 bg-gray-300 justify-evenly  bg-opacity-20 shadow-xl gap-10  text-sky-950 '  >
 
-                    <div className='w-full ' data-aos="fade-right" >
+                    <div className='w-full ' data-aos="zoom-out" >
                         <div className="card h-full bg-sky-200 rounded-none   w-full  ">
                             <div className="card-body w-fit">
                                 <p className='text-7xl text-center flex justify-center font-semibold ' ><TbTargetArrow></TbTargetArrow></p>
@@ -60,7 +60,7 @@ const Home = () => {
                     </div>
 
 
-                    <div className='w-full' data-aos="fade-left" >
+                    <div className='w-full' data-aos="zoom-out" >
                         <div className="card bg-sky-200 h-full  rounded-none    w-full   " >
                             <div className="card-body w-full h-full">
                                 <p className='text-7xl text-center flex justify-center font-semibold ' > <IoCheckmarkDoneCircleSharp></IoCheckmarkDoneCircleSharp> </p>

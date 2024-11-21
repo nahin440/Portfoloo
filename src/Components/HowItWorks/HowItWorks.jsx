@@ -78,7 +78,7 @@ const HowItWorks = () => {
                                 key={step.id}
                                 className={`relative bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center md:items-start ${index % 2 === 0 ? "md:ml-auto md:mr-16" : "md:mr-auto md:ml-16"
                                     }`}
-                                data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+                                data-aos={index % 2 === 0 ? "flip-left" : "flip-right"}
                                 data-aos-delay={index * 100}
                             >
                                 {/* Number Badge */}
