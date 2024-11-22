@@ -1,8 +1,7 @@
 
 import { AuthContext } from '../../Provider/AuthProvider';
 import "animate.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { useContext, useEffect } from 'react';
 
 import { FaUser } from "react-icons/fa";
@@ -16,10 +15,7 @@ const Dashboard = () => {
     const { user } = useContext(AuthContext)
 
 
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
-
+ 
     return (
         <div className="flex main-div justify-center items-center min-h-screen bg-cover bg-opacity-60 bg-gradient-to-r from-blue-800/30 via-blue-500/30 to-sky-900/30">
 

@@ -5,8 +5,7 @@ import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import CallToAction from '../UniqueSections/CallToAction';
-import WhyDonate from '../UniqueSections/WhyDonate';
-import ImageCardSection from '../UniqueSections/ImageCard';
+
 import 'animate.css';
 import HowItWorks from '../HowItWorks/HowItWorks';
 
@@ -79,11 +78,6 @@ const Home = () => {
                 <HowItWorks></HowItWorks>
             </div>
 
-
-            <div className='my-10 w-11/12 md:w-9/12 mx-auto'>
-                <WhyDonate></WhyDonate>
-            </div>
-
             
 
             <div className='my-10 w-11/12 md:w-9/12 mx-auto'>
@@ -92,9 +86,6 @@ const Home = () => {
 
 
 
-            <div className='my-10 w-11/12 md:w-9/12 mx-auto'>
-                <ImageCardSection></ImageCardSection>
-            </div>
 
 
 

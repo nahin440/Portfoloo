@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './Nav.css'
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../assets/bannerPics/logo.jpg'
+
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Nav = () => {
@@ -34,12 +34,12 @@ const Nav = () => {
                                 <NavLink className=' ml-0 px-5 py-2' to="/" >Home</NavLink>
                                 <NavLink className=' ml-0 px-5 py-2' to="/campaign" >Campaign</NavLink>
                                 <NavLink className=' ml-0 px-5 py-2' to="/dashboard" >Dashboard</NavLink>
-                                <NavLink className='px-5 py-2' to="/how-to-help" >How To Help</NavLink>
+                               
                             </ul>
                         </ul>
                     </div>
                     <div>
-                        <Link to="/" className=""><img className='w-10 h-10 p-1 border rounded-full border-white' src={logo} alt="" /></Link>
+                        <Link to="/" className=""><img className='w-10 h-10 p-1 border rounded-full border-white' src="#" alt="" /></Link>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex  ">
@@ -47,7 +47,7 @@ const Nav = () => {
                         <NavLink className='px-5 py-2' to="/" >Home</NavLink>
                         <NavLink className='px-5 py-2' to="/campaign" >Campaign</NavLink>
                         <NavLink className='px-5 py-2' to="/dashboard" >Dashboard</NavLink>
-                        <NavLink className='px-5 py-2' to="/how-to-help" >How To Help</NavLink>
+                       
                     </ul>
                 </div>
 

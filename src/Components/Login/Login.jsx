@@ -43,7 +43,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 setUser(user);
-                setLoading(true);
+                
                 navigate("/");
             })
             .catch((error) => {

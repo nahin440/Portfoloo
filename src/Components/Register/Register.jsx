@@ -24,19 +24,7 @@ const Register = () => {
         const password = form.password.value;
 
       
-        if (name.length < 5) {
-            setError({ name: "Name must be at least 5 characters long." });
-            toast.error("Name must be at least 5 characters long.");
-            return;
-        }
-
-        if (password.length < 6 || !/[A-Z]/.test(password) || !/[a-z]/.test(password)) {
-            setError({
-                password: "Password must be at least 6 characters long with an uppercase and lowercase letter.",
-            });
-            toast.error("Password must meet the criteria.");
-            return;
-        }
+       
 
         try {
            
